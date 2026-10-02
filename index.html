@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Save Our Forests | Deforestation in the Philippines</title>
+<style>
+:root{--green:#1f5d3a;--dark:#123524;--leaf:#4c9a5f;--sand:#f6f3ea;--ink:#1d2a22;--alert:#c0532b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Georgia',"Noto Serif",serif;color:var(--ink);background:var(--sand);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,nav,.stat,.btn,figcaption,.vtitle{font-family:"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--green)}
+img{max-width:100%;display:block}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+p{letter-spacing:.1px}
+
+/* Header / nav */
+header.top{background:var(--dark);position:sticky;top:0;z-index:10}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;padding:12px 20px}
+nav a{color:#e6f1e9;text-decoration:none;font-size:.9rem;padding:4px 2px;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--leaf)}
+
+/* Hero */
+.hero{min-height:82vh;display:flex;align-items:center;text-align:center;color:#fff;
+background:linear-gradient(rgba(10,35,22,.62),rgba(10,35,22,.78)),
+url("https://commons.wikimedia.org/wiki/Special:FilePath/Palawan,_Tropical_jungle_rainforest.jpg?width=1600") center/cover,var(--green)}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.1;margin-bottom:16px}
+.hero p{max-width:640px;margin:0 auto 26px;font-size:1.15rem}
+.btn{display:inline-block;background:var(--leaf);color:#fff;text-decoration:none;padding:12px 28px;border-radius:30px;font-weight:600}
+.btn:hover{background:#3d8650}
+
+/* Sections */
+section{padding:64px 0}
+section:nth-of-type(even){background:#fff}
+h2{color:var(--green);font-size:2rem;font-weight:700;margin-bottom:8px}
+h2::after{content:"";display:block;width:60px;height:4px;background:var(--leaf);margin:10px 0 26px;border-radius:2px}
+h3{color:var(--dark);font-size:1.15rem;font-weight:700;margin:18px 0 10px}
+p{margin-bottom:16px;max-width:72ch}
+ul{margin:0 0 16px 22px}
+li{margin-bottom:8px}
+strong{color:var(--dark)}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:20px}
+.card{background:var(--sand);border-left:5px solid var(--leaf);padding:18px;border-radius:6px}
+.card h3{margin-top:0;font-size:1.05rem}
+.card p{font-size:.95rem;margin:0}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
+.stat{background:var(--dark);color:#fff;padding:24px 16px;text-align:center;border-radius:10px}
+.stat strong{display:block;font-size:2.2rem;color:#9be0ad}
+.stat span{font-size:.9rem}
+
+/* Bar comparison (pure CSS) */
+.bars{margin:24px 0}
+.bar{margin-bottom:14px;font-family:"Segoe UI",Arial,sans-serif;font-size:.9rem}
+.track{background:#dfe8e0;border-radius:6px;overflow:hidden;height:30px}
+.fill{height:100%;display:flex;align-items:center;padding-left:10px;color:#fff;font-weight:600}
+.f1{width:100%;background:var(--green)}
+.f2{width:34%;background:var(--alert)}
+
+/* Media */
+figure{margin:0}
+figure img{width:100%;height:240px;object-fit:cover;border-radius:8px}
+figcaption{font-size:.8rem;color:#55665b;margin-top:6px;line-height:1.4}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:20px}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:20px}
+.video{position:relative;padding-top:56.25%;border-radius:8px;overflow:hidden;background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vtitle{font-family:"Segoe UI",Arial,sans-serif;font-weight:600;margin:8px 0 2px}
+
+/* Quote / conclusion */
+.quote{background:var(--green);color:#fff;padding:28px;border-radius:10px;font-size:1.15rem;margin-top:24px}
+.take{list-style:none;margin:0}
+.take li{background:var(--sand);padding:14px 18px 14px 44px;border-radius:6px;position:relative}
+.take li::before{content:"🌱";position:absolute;left:14px}
+
+/* Footer */
+footer{background:var(--dark);color:#cfe0d4;padding:40px 0;font-size:.9rem}
+footer h3{color:#fff}
+footer a{color:#9be0ad}
+.disc{margin-top:20px;padding-top:20px;border-top:1px solid #35594a}
+
+@media(max-width:600px){section{padding:44px 0}.hero{min-height:70vh}}
+</style>
+</head>
+<body>
+
+<header class="top">
+<nav>
+<a href="#issue">The Issue</a>
+<a href="#status">Current Status</a>
+<a href="#causes">Causes</a>
+<a href="#effects">Effects</a>
+<a href="#data">The Data</a>
+<a href="#watch">Watch</a>
+<a href="#insight">Our Insight</a>
+<a href="#act">Take Action</a>
+</nav>
+</header>
+
+<div class="hero">
+<div class="wrap">
+<h1>Save Our Forests</h1>
+<p>Deforestation and jungle degradation in the Philippines is more than the loss of trees. It is the loss of the ecosystems that protect people, wildlife, and water.</p>
+<a class="btn" href="#issue">Learn the Facts</a>
+</div>
+</div>
+
+<section id="issue">
+<div class="wrap">
+<h2>1. What is the Issue?</h2>
+<p><strong>Deforestation</strong> is the large-scale removal or loss of forests, often caused by human activities such as logging, agricultural expansion, land conversion, infrastructure development, and settlement. <strong>Forest degradation</strong> occurs when forests remain but lose part of their ecological quality, biodiversity, and ability to provide important ecosystem services.</p>
+<p>The Philippines has experienced a major decline in forest cover over the past century. According to the Department of Environment and Natural Resources (DENR), forest cover declined from approximately <strong>21 million hectares</strong> in the early 1900s to about <strong>7.2 million hectares</strong>. Major factors include logging, agricultural expansion, and urban development.</p>
+<div class="gallery">
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palawan,_Philippines,_Tropical_rainforest.jpg?width=800" alt="Tropical rainforest in Palawan, Philippines" loading="lazy">
+<figcaption>Tropical rainforest in Palawan, Philippines. Photo: Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons.</figcaption>
+</figure>
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Deforestation_in_Borneo.jpg?width=800" alt="Cleared forest land in Borneo, Southeast Asia" loading="lazy">
+<figcaption>Forest clearing in Borneo, a neighboring Southeast Asian region facing similar pressures. Via Wikimedia Commons (see file page for license).</figcaption>
+</figure>
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palawan,_Philippines,_Jungle.jpg?width=800" alt="Dense jungle in Palawan, Philippines" loading="lazy">
+<figcaption>Jungle in Palawan, Philippines. Photo: Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section id="status">
+<div class="wrap">
+<h2>2. Current Status</h2>
+<p>Deforestation and forest degradation remain important environmental concerns in the Philippines. Recent Global Forest Watch data shows that between 2001 and 2025, the Philippines lost approximately <strong>1.6 million hectares</strong> of tree cover, equivalent to an <strong>8% decrease</strong> from its 2000 tree-cover area. The estimated loss was associated with approximately <strong>960 million metric tons</strong> of CO₂-equivalent emissions.</p>
+<div class="stats">
+<div class="stat"><strong>1.6M ha</strong><span>tree cover lost, 2001–2025</span></div>
+<div class="stat"><strong>8%</strong><span>decrease from 2000 tree cover</span></div>
+<div class="stat"><strong>960M t</strong><span>CO₂-equivalent emissions</span></div>
+</div>
+<p>DENR also maintains national forest-cover data, including forest-cover information by region, showing that forest resources continue to be monitored as an important part of environmental management in the country.</p>
+
+<h3>Palawan: The Last Ecological Frontier</h3>
+<p>Palawan is one of the provinces that cover the largest areas of Philippine forest, known as the country's <strong>"last ecological frontier"</strong> as it holds roughly one-tenth of the national total of forest land.</p>
+<p>In 2020, Palawan had <strong>1 megahectare (1.0 Mha)</strong> of natural forest, covering 69% of its land area. By 2025, it had lost <strong>4.5 kilohectares (4.5 kha)</strong>, or at least 0.45%, leaving a total of <strong>0.9955 Mha</strong>. The lost forest is equivalent to the area of <strong>1,234 Philippine Arenas</strong>, and is associated with <strong>2.6 megatonnes (2.6 Mt)</strong> of carbon dioxide (CO₂) emissions.</p>
+
+<div class="stats">
+<div class="stat"><strong>1.0 Mha</strong><span>Palawan natural forest, 2020</span></div>
+<div class="stat"><strong>4.5 kha</strong><span>forest lost by 2025</span></div>
+<div class="stat"><strong>2.6 Mt</strong><span>CO₂ emissions from the loss</span></div>
+</div>
+
+<h3>Cleopatra's Needle Critical Habitat</h3>
+<p>In November 2016, the <a href="https://www.rappler.com/environment/153117-palawan-cleopatras-needle-declared-critical-habitat/" target="_blank" rel="noopener">Palawan Council for Sustainable Development</a> (PCSD) officially declared the Cleopatra's Needle Forest as a critical habitat. The declaration was made to protect the mountain's different species of flora and fauna.</p>
+<p>According to the Global Wildlife Conservation, the mountain's 40,000-hectare forest is a safe haven for unique and threatened species, including the Philippine Cockatoo, the Palawan Forest Turtle, the Palawan Bearcat, the Palawan Horned Frog, the Palawan Toadlet, the Philippine Flat-headed Frog, and the Palawan Monitor Lizard.</p>
+
+<figure style="margin:20px 0">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palawan,_Tropical_rainforest_deep_in_Palawan_wilderness.jpg?width=900" alt="Primary rainforest wilderness in Palawan, near the Cleopatra's Needle region" loading="lazy">
+<figcaption>Primary forest wilderness in Palawan — part of the same forest system that includes the Cleopatra's Needle Critical Habitat. Photo: Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons.</figcaption>
+</figure>
+
+<div class="videos">
+<div>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/FidYIoPTdTA" title="Born to Be Wild: Cleopatra's Needle Forest" loading="lazy" allowfullscreen></iframe></div>
+<p class="vtitle">Born to Be Wild — Cleopatra's Needle Forest</p>
+</div>
+<div>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/mudcczNn0xI" title="Born to Be Wild: Palawan" loading="lazy" allowfullscreen></iframe></div>
+<p class="vtitle">Born to Be Wild — Palawan</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="causes">
+<div class="wrap">
+<h2>3. Major Causes</h2>
+<p>The Philippine Biodiversity Strategy and Action Plan identifies logging, agricultural conversion, kaingin, forest fires, and other disturbances among the direct causes of deforestation.</p>
+<div class="grid">
+<div class="card"><h3>Logging</h3><p>Removal of trees for timber and other forest products.</p></div>
+<div class="card"><h3>Agricultural Expansion</h3><p>Forests are converted into agricultural land.</p></div>
+<div class="card"><h3>Land Conversion &amp; Urban Development</h3><p>Forests may be cleared for settlements, roads, and other infrastructure.</p></div>
+<div class="card"><h3>Kaingin</h3><p>Slash-and-burn cultivation: vegetation is cleared and burned to prepare land for farming.</p></div>
+<div class="card"><h3>Fires &amp; Disturbances</h3><p>Fires and natural disturbances can damage forest ecosystems.</p></div>
+</div>
+</div>
+</section>
+
+<section id="effects">
+<div class="wrap">
+<h2>4. Effects on Humans and the Ecosystem</h2>
+<p>Deforestation affects both people and the natural environment.</p>
+<div class="grid">
+<div class="card">
+<h3>Effects on Humans</h3>
+<ul>
+<li>Greater risk of flooding and landslides</li>
+<li>Increased soil erosion</li>
+<li>Reduced availability and quality of water</li>
+<li>Loss of forest resources that support communities and livelihoods</li>
+<li>Increased vulnerability to environmental and climate-related problems</li>
+</ul>
+</div>
+<div class="card">
+<h3>Effects on Ecosystems</h3>
+<ul>
+<li>Loss and fragmentation of wildlife habitats</li>
+<li>Decline in biodiversity</li>
+<li>Disruption of natural ecological processes</li>
+<li>Soil degradation and erosion</li>
+<li>Reduced ability of forests to store carbon</li>
+<li>Increased sedimentation that can affect rivers and coastal ecosystems</li>
+</ul>
+</div>
+</div>
+<p style="margin-top:20px">The Philippine Biodiversity Strategy and Action Plan reports that deforestation can contribute to increased flooding and drought, erosion, landslides, siltation of coral reefs, and reduced groundwater supplies. It also emphasizes that forests provide important ecosystem services that support human well-being and environmental health.</p>
+</div>
+</section>
+
+<section id="data">
+<div class="wrap">
+<h2>5. What Does the Quantitative Data Tell Us?</h2>
+<p>The available data shows that the problem is significant rather than only theoretical.</p>
+
+<div class="bars">
+<div class="bar">Early 1900s
+<div class="track"><div class="fill f1">≈ 21 million hectares</div></div></div>
+<div class="bar">Today (DENR)
+<div class="track"><div class="fill f2">≈ 7.2 million hectares</div></div></div>
+</div>
+
+<p>More recently, Global Forest Watch recorded approximately 1.6 million hectares of tree-cover loss from 2001 to 2025. It also found that <strong>75%</strong> of tree-cover loss occurring from 2021–2025 was within <strong>natural forests</strong>.</p>
+<p>These figures show that human activities that change forest land can have a large cumulative effect. The loss of forests does not only mean fewer trees; it can also mean the loss of habitats, ecosystem services, carbon storage, and natural protection against environmental hazards.</p>
+</div>
+</section>
+
+<section id="watch">
+<div class="wrap">
+<h2>Watch and Learn</h2>
+<p>These videos show the situation on the ground and the ongoing efforts to restore Philippine forests.</p>
+<div class="videos">
+<div>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/em1eRDsXD4U" title="Born to be Wild: Effects of deforestation in the Philippines" loading="lazy" allowfullscreen></iframe></div>
+<p class="vtitle">Born to Be Wild: Effects of Deforestation in the Philippines</p>
+<figcaption>GMA Public Affairs report from Surigao del Sur (aired May 2019).</figcaption>
+</div>
+<div>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/WXy2ZmYDDhU" title="Vanishing forests: Why is the Philippines failing at reforestation? 101 East" loading="lazy" allowfullscreen></iframe></div>
+<p class="vtitle">Vanishing Forests: Why Is the Philippines Failing at Reforestation?</p>
+<figcaption>101 East documentary on the country's regreening program.</figcaption>
+</div>
+<div>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/-688YpyLQlU" title="Fighting Deforestation: DENR's Efforts to Protect Philippine Forests" loading="lazy" allowfullscreen></iframe></div>
+<p class="vtitle">Fighting Deforestation: DENR's Efforts to Protect Philippine Forests</p>
+<figcaption>Weather HQ segment on government forest protection efforts.</figcaption>
+</div>
+</div>
+<p style="margin-top:16px;font-size:.9rem">Video credit belongs to the original channels and creators. If a video does not play, open it directly on YouTube using the title above.</p>
+</div>
+</section>
+
+<section id="insight">
+<div class="wrap">
+<h2>6. Our Insight and Analysis</h2>
+<p>The information shows that deforestation is both an environmental and a human issue. Forests provide services that people often depend on without directly noticing them:</p>
+<ul class="take">
+<li>Water regulation</li>
+<li>Soil protection</li>
+<li>Carbon storage</li>
+<li>Wildlife habitat</li>
+</ul>
+<p style="margin-top:16px">The quantitative data also shows that forest loss has occurred over a long period and continues to be monitored today. Protecting remaining forests and reducing activities that cause unnecessary forest loss are important for maintaining biodiversity, ecosystem stability, and human well-being.</p>
+<div class="quote"><strong>Our conclusion:</strong> Deforestation and jungle degradation in the Philippines should be understood not simply as the loss of trees, but as the degradation of ecosystems that support people, wildlife, water resources, and the overall health of the environment.</div>
+</div>
+</section>
+
+<section id="act">
+<div class="wrap">
+<h2>Take Action</h2>
+<p>Advocacy starts with awareness. Small, collective actions add up.</p>
+<div class="grid">
+<div class="card"><h3>Spread the Word</h3><p>Share this page and the facts in it with classmates, family, and friends.</p></div>
+<div class="card"><h3>Plant and Protect</h3><p>Join community tree-planting and forest-care activities in your area.</p></div>
+<div class="card"><h3>Consume Responsibly</h3><p>Choose recycled and sustainably sourced paper and wood products.</p></div>
+<div class="card"><h3>Support Local Efforts</h3><p>Back reforestation groups, Indigenous communities, and programs that protect forests.</p></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<h3>Sources</h3>
+<ul>
+<li>Department of Environment and Natural Resources (DENR) – Philippine Biodiversity Strategy and Action Plan.</li>
+<li>Global Forest Watch – Philippines Forest Change Data.</li>
+<li>Department of Environment and Natural Resources – Forest Cover of the Philippines.</li>
+<li>DENR Enhanced National Greening Program materials.</li>
+</ul>
+<div class="disc">
+<h3>Disclaimer</h3>
+<p>This digital advocacy page is a school project created for educational and informational purposes. Its purpose is to raise awareness about deforestation and forest degradation and to encourage collective actions that contribute to the preservation and protection of the Earth's ecosystems. The information presented is based on cited sources and does not represent the official position of any government agency or organization.</p>
+<p><strong>Copyright and Credits:</strong> Images, videos, graphics, and other materials that are not originally created by the students are credited to their respective owners and used in accordance with applicable copyright and privacy guidelines. Photos of Palawan: Vyacheslav Argenberg (CC BY 4.0) via <a href="https://commons.wikimedia.org">Wikimedia Commons</a>. Videos: their respective YouTube channels.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
